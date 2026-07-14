@@ -49,8 +49,8 @@ export default function Hero() {
               variants={fadeUp}
               className="text-3xl font-bold leading-tight tracking-tight text-foreground sm:text-4xl lg:text-5xl lg:leading-[1.15]"
             >
-              Seu endereço empresarial em Fortaleza com a{' '}
-              <span className="text-coral">segurança de um imóvel próprio</span>
+              Seu endereço fiscal em Fortaleza com{' '}
+              <span className="text-coral">12 anos de experiência</span>
             </motion.h1>
 
             <motion.p
@@ -59,8 +59,7 @@ export default function Hero() {
             >
               Endereço fiscal e comercial com Processo Gestor do Corpo de
               Bombeiros, Alvará de Funcionamento e toda a estrutura para abrir
-              ou manter sua empresa. Coworking com imóvel próprio no Bairro de
-              Fátima.
+              e manter sua empresa. Coworking com salas privativas e localização estratégica em Fortaleza.
             </motion.p>
 
             {/* CTA Buttons */}

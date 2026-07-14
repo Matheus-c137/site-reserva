@@ -98,7 +98,7 @@ export const SERVICES: Service[] = [
     icon: 'MapPin',
     title: 'Endereço Comercial',
     description:
-      'Utilize um endereço profissional para divulgar sua empresa. Ideal para quem precisa de um ponto de referência confiável para clientes e parceiros.',
+      'Ideal para quem precisa de um ponto de referência confiável para o seu negócio, suas reuniões com clientes e parceiros.',
     waMessage: WA_MESSAGES.endereco_comercial,
   },
   {
@@ -189,7 +189,7 @@ export const PLANS: Plan[] = [
   },
   {
     id: 'fiscal-telefone',
-    name: 'Fiscal + Telefone Fixo Empresarial Para whatsapp',
+    name: 'Endereço Fiscal + Telefone Fixo Virtual + Whatsapp Business',
     subtitle: 'Endereço Fiscal + Telefone Empresarial',
     priceAnnual: '129,90',
     priceMonthly: '149,90',
@@ -207,7 +207,7 @@ export const PLANS: Plan[] = [
   },
   {
     id: 'fiscal-ie',
-    name: 'Fiscal + IE + IPTU',
+    name: 'Endereço Fiscal + IE + IPTU',
     subtitle: 'Endereço Fiscal + Inscrição Estadual + IPTU Exclusivo',
     priceAnnual: null,
     priceMonthly: null,
