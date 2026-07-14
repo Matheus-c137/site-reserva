@@ -11,6 +11,7 @@ export function getOrganizationSchema() {
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo.png`,
     sameAs: [SOCIAL.facebook, SOCIAL.instagram, SOCIAL.linkedin],
+    taxID: CONTACT.cnpj,
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: CONTACT.phoneRaw,
@@ -44,6 +45,7 @@ export function getLocalBusinessSchema() {
     priceRange: 'R$ 49,90 - R$ 149,90',
     description:
       'Coworking com imóvel próprio em Fortaleza. Endereço fiscal e comercial com Processo Gestor do Corpo de Bombeiros, Alvará de Funcionamento e toda a estrutura para abertura de empresas.',
+    taxID: CONTACT.cnpj,
     address: {
       '@type': 'PostalAddress',
       streetAddress: CONTACT.address.street,

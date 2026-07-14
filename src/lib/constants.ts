@@ -3,15 +3,16 @@
 // ============================================================
 
 // WhatsApp — update with actual number
-export const WHATSAPP_NUMBER = '558530320055';
+export const WHATSAPP_NUMBER = '558530550055';
 export const WHATSAPP_BASE_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 export const SITE_URL = 'https://reservacoworking.com.br';
 export const SITE_NAME = 'Reserva Coworking';
 
 export const CONTACT = {
-  phone: '(85) 3032-0055',
-  phoneRaw: '+558530320055',
+  phone: '(85) 3055-0055',
+  phoneRaw: '+558530550055',
+  cnpj: '23.626.952/0001-10',
   email: 'contato@reservacoworking.com.br',
   address: {
     street: 'Rua Monsenhor Otávio de Castro, 435',
@@ -188,7 +189,7 @@ export const PLANS: Plan[] = [
   },
   {
     id: 'fiscal-telefone',
-    name: 'Fiscal + Telefone',
+    name: 'Fiscal + Telefone Fixo Empresarial Para whatsapp',
     subtitle: 'Endereço Fiscal + Telefone Empresarial',
     priceAnnual: '129,90',
     priceMonthly: '149,90',
@@ -406,17 +407,17 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'MEI pode utilizar o endereço fiscal do coworking?',
     answer:
-      'Sim! O MEI pode utilizar o endereço fiscal do Reserva Coworking para registrar sua empresa. Isso é especialmente útil para quem trabalha em casa e deseja separar o endereço residencial do empresarial, ou para quem precisa de um endereço em Fortaleza.',
+      'Sim! O MEI pode utilizar o endereço fiscal do Reserva Coworking para registrar sua empresa. Isso é especialmente útil para separar o endereço residencial do empresarial e para evitar custos extras, já que abrir um CNPJ em endereço residencial pode descaracterizar o imóvel e fazer com que você pague um IPTU comercial mais caro. Além disso, é excelente para quem precisa de um endereço profissional em Fortaleza.',
   },
   {
     question: 'Como funciona a abertura de empresa no coworking?',
     answer:
-      'O processo é simplificado. Nosso imóvel já possui Processo Gestor do Corpo de Bombeiros, Alvará de Funcionamento e Vigilância Sanitária. Em muitos casos, sua empresa utiliza a documentação já existente, reduzindo significativamente a burocracia e o tempo de abertura.',
+      'O processo é simplificado. Nosso imóvel já possui Processo Gestor do Corpo de Bombeiros, Alvará de Funcionamento e Vigilância Sanitária.',
   },
   {
     question: 'O que é o Processo Gestor do Corpo de Bombeiros?',
     answer:
-      'O Processo Gestor é uma certificação emitida pelo Corpo de Bombeiros que atesta que o imóvel possui as condições adequadas de segurança contra incêndio. É um documento obrigatório para diversas atividades empresariais e pode ser um processo demorado. No Reserva Coworking, este processo já está aprovado.',
+      'O Processo Gestor é uma certificação emitida pelo Corpo de Bombeiros que atesta que o imóvel possui as condições adequadas de segurança contra incêndio. É um documento obrigatório para diversas atividades empresariais e pode ser um processo demorado. No Reserva Coworking, este processo já está aprovado, o que também diminui ou isenta taxas de licenciamento para empresas com endereço fiscal no Reserva.',
   },
   {
     question: 'Posso emitir Nota Fiscal usando o endereço do coworking?',
@@ -429,9 +430,9 @@ export const FAQ_ITEMS: FaqItem[] = [
       'Sim, para algumas atividades é possível obter Inscrição Estadual utilizando o endereço do Reserva Coworking. Consulte nossa equipe para verificar a viabilidade de acordo com o CNAE da sua empresa.',
   },
   {
-    question: 'Como funciona o recebimento de correspondências?',
+    question: 'Como funciona o recebimento de encomendas e correspondências?',
     answer:
-      'Recebemos todas as correspondências enviadas para o endereço da sua empresa. Você é notificado assim que uma correspondência chega e pode retirá-la pessoalmente ou combinar a melhor forma de entrega.',
+      'O recebimento de correspondências e encomendas é feito de acordo com o plano contratado (evitando que sejam enviados itens não relacionados à atividade da empresa). Assim que qualquer correspondência ou encomenda é recebida, o cliente é informado imediatamente para que possa retirá-la ou combinar a melhor forma de entrega.',
   },
   {
     question: 'As salas privativas incluem qual infraestrutura?',
@@ -451,7 +452,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Quais documentos preciso para contratar?',
     answer:
-      'Para pessoas físicas: RG, CPF e comprovante de residência. Para empresas já constituídas: contrato social, CNPJ e documentos dos sócios. Nossa equipe orienta todo o processo de documentação.',
+      'Para contratação por Pessoa Física (que deve ser sócia da empresa em constituição): RG, CPF, comprovante de residência e dados de contato (como e-mail e telefone/WhatsApp). Para empresas já constituídas: contrato social, CNPJ e documentos dos sócios. Nossa equipe orienta todo o processo de documentação.',
   },
 ];
 
@@ -465,6 +466,8 @@ export const PRIVATE_ROOM_BENEFITS = [
   'Internet de alta velocidade',
   'Segurança e controle de acesso',
   'Excelente localização no Bairro de Fátima',
+  'Próximo ao aeroporto, centro e principais bairros de Fortaleza',
+  'Estacionamento facilitado',
   'Manutenção e limpeza inclusos',
   'Endereço fiscal com IPTU exclusivo',
 ] as const;
