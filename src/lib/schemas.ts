@@ -39,7 +39,7 @@ export function getLocalBusinessSchema() {
     '@type': ['LocalBusiness', 'ProfessionalService'],
     '@id': `${SITE_URL}/#business`,
     name: SITE_NAME,
-    image: `${SITE_URL}/images/og-image.jpg`,
+    image: `${SITE_URL}/images/og-image.webp`,
     url: SITE_URL,
     telephone: CONTACT.phoneRaw,
     priceRange: 'R$ 49,90 - R$ 149,90',

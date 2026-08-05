@@ -78,7 +78,7 @@ export const metadata: Metadata = {
       'Coworking com imóvel próprio em Fortaleza. Endereço fiscal, comercial, salas privativas e toda a estrutura para sua empresa. Planos a partir de R$ 49,90/mês.',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/images/og-image.webp',
         width: 1200,
         height: 630,
         alt: 'Reserva Coworking — Endereço Fiscal e Comercial em Fortaleza',
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     title: 'Reserva Coworking — Endereço Fiscal e Comercial em Fortaleza',
     description:
       'Coworking com imóvel próprio. Endereço fiscal e comercial com Processo Gestor do Corpo de Bombeiros. Planos a partir de R$ 49,90/mês.',
-    images: ['/images/og-image.png'],
+    images: ['/images/og-image.webp'],
   },
   icons: {
     icon: [

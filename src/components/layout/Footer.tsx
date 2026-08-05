@@ -12,12 +12,11 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="#" className="mb-5 inline-flex items-center gap-2" aria-label="Reserva Coworking">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-coral">
-                <span className="text-lg font-bold text-white">R</span>
-              </div>
-              <span className="text-lg font-bold tracking-tight text-white">
-                Reserva<span className="text-coral">.</span>
-              </span>
+              <img
+                src="/images/logo.svg"
+                alt="Reserva Coworking"
+                className="h-9 w-auto max-w-[150px] object-contain brightness-0 invert"
+              />
             </a>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/60">
               Coworking com imóvel próprio em Fortaleza. Endereço fiscal e comercial com toda a estrutura para sua empresa.

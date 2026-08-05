@@ -30,14 +30,14 @@ const trustBadges = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white via-white to-coral-50 pt-24 pb-16 md:pb-0 md:min-h-screen md:flex md:items-center">
-      <div className="container-custom relative z-10">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="container-custom max-w-[1280px] relative z-10">
+        <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
           {/* ── Left: Text Content ── */}
           <motion.div
             variants={stagger}
             initial="hidden"
             animate="visible"
-            className="max-w-xl"
+            className="lg:col-span-5"
           >
             <motion.div variants={fadeUp}>
               <span className="mb-4 inline-block rounded-full bg-green-50 px-4 py-1.5 text-xs font-semibold tracking-wider text-green uppercase">
@@ -100,46 +100,23 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* ── Right: Decorative Gradient Orbs ── */}
+          {/* ── Right: Responsive Hero Images ── */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:block"
-            aria-hidden="true"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] as const }}
+            className="relative w-full lg:col-span-7"
           >
-            <div className="relative mx-auto aspect-square w-full max-w-lg">
-              {/* Main coral orb */}
-              <motion.div
-                animate={{ y: [0, -16, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-coral/30 blur-3xl"
-              />
-
-              {/* Blue-light orb */}
-              <motion.div
-                animate={{ y: [0, 12, 0], x: [0, -8, 0] }}
-                transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
-                className="absolute top-8 right-8 h-48 w-48 rounded-full bg-blue-light/40 blur-3xl"
-              />
-
-              {/* Yellow orb */}
-              <motion.div
-                animate={{ y: [0, 10, 0], x: [0, 6, 0] }}
-                transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute bottom-12 left-12 h-40 w-40 rounded-full bg-yellow/30 blur-3xl"
-              />
-
-              {/* Small coral accent */}
-              <motion.div
-                animate={{ y: [0, -8, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
-                className="absolute top-16 left-16 h-24 w-24 rounded-full bg-coral/20 blur-2xl"
-              />
-
-              {/* Central decorative ring */}
-              <div className="absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full border border-coral/10" />
-              <div className="absolute top-1/2 left-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-light/10" />
+            <div className="relative mx-auto w-full overflow-hidden rounded-3xl border border-border bg-background-alt shadow-card">
+              <picture>
+                <source srcSet="/images/hero-desktop.webp" media="(min-width: 1024px)" />
+                <img
+                  src="/images/hero-mobile.webp"
+                  alt="Reserva Coworking Espaço Integrado"
+                  className="h-auto w-full block"
+                  loading="eager"
+                />
+              </picture>
             </div>
           </motion.div>
         </div>

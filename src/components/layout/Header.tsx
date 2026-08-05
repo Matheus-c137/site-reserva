@@ -37,13 +37,13 @@ export default function Header() {
         <nav className="flex h-[72px] items-center justify-between" aria-label="Navegação principal">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2" aria-label="Reserva Coworking - Início">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-coral">
-              <span className="text-lg font-bold text-white">R</span>
-            </div>
-            <span className="text-lg font-bold tracking-tight text-foreground">
-              Reserva<span className="text-coral">.</span>
-            </span>
+            <img
+              src="/images/logo.svg"
+              alt="Reserva Coworking"
+              className="h-9 w-auto max-w-[150px] object-contain"
+            />
           </a>
+
 
           {/* Desktop Nav */}
           <div className="hidden items-center gap-1 lg:flex">

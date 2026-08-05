@@ -25,10 +25,10 @@ const itemVariants = {
 export default function PrivateRooms() {
   return (
     <section id="salas" className="section-padding bg-background-alt">
-      <div className="container-custom">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+      <div className="container-custom max-w-[1280px]">
+        <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
           {/* Left — Content */}
-          <div>
+          <div className="lg:col-span-5">
             <SectionTitle
               tag="Salas Privativas"
               title="Seu escritório particular no coração de Fortaleza"
@@ -72,38 +72,24 @@ export default function PrivateRooms() {
             </motion.div>
           </div>
 
-          {/* Right — Decorative Gradient */}
+          {/* Right — Responsive Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:block"
-            aria-hidden="true"
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
+            className="relative w-full lg:col-span-7"
           >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
-              {/* Base gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-coral-50 via-green-50 to-blue-light/20" />
-
-              {/* Floating decorative elements */}
-              <div className="absolute left-8 top-8 h-24 w-24 rounded-2xl bg-coral/10 animate-float" />
-              <div className="absolute bottom-12 right-12 h-32 w-32 rounded-full bg-green/10 animate-float [animation-delay:1s]" />
-              <div className="absolute right-8 top-1/3 h-16 w-16 rounded-xl bg-blue-light/20 animate-float [animation-delay:0.5s]" />
-
-              {/* Card preview elements */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%]">
-                <div className="rounded-2xl border border-white/60 bg-white/70 p-6 shadow-lg backdrop-blur-sm">
-                  <div className="mb-3 h-3 w-1/2 rounded-full bg-coral/20" />
-                  <div className="mb-2 h-2.5 w-full rounded-full bg-foreground/5" />
-                  <div className="mb-2 h-2.5 w-4/5 rounded-full bg-foreground/5" />
-                  <div className="h-2.5 w-3/5 rounded-full bg-foreground/5" />
-                  <div className="mt-5 flex gap-2">
-                    <div className="h-8 w-8 rounded-lg bg-green/15" />
-                    <div className="h-8 w-8 rounded-lg bg-coral/15" />
-                    <div className="h-8 w-8 rounded-lg bg-blue-light/25" />
-                  </div>
-                </div>
-              </div>
+            <div className="relative mx-auto w-full overflow-hidden rounded-3xl border border-border bg-background shadow-card">
+              <picture>
+                <source srcSet="/images/salas-desktop.webp" media="(min-width: 1024px)" />
+                <img
+                  src="/images/salas-mobile.webp"
+                  alt="Salas Privativas Reserva Coworking"
+                  className="h-auto w-full block"
+                  loading="lazy"
+                />
+              </picture>
             </div>
           </motion.div>
         </div>
