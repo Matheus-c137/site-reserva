@@ -72,6 +72,8 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary px-8 py-4 text-base"
+                data-track="click_whatsapp"
+                data-track-location="hero"
               >
                 Solicitar Atendimento
                 <ArrowRight className="h-4.5 w-4.5" />
@@ -81,6 +83,7 @@ export default function Hero() {
                 message={WA_MESSAGES.generic}
                 label="Falar no WhatsApp"
                 size="large"
+                trackLocation="hero"
               />
             </motion.div>
 

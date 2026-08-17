@@ -102,7 +102,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-coral" />
-                <a href={`tel:${CONTACT.phoneRaw}`} className="text-sm text-white/60 transition-colors hover:text-coral">
+                <a
+                  href={`tel:${CONTACT.phoneRaw}`}
+                  className="text-sm text-white/60 transition-colors hover:text-coral"
+                  data-track="click_phone"
+                >
                   {CONTACT.phone}
                 </a>
               </li>
@@ -120,6 +124,8 @@ export default function Footer() {
                    target="_blank"
                    rel="noopener noreferrer"
                    className="text-sm text-white/60 transition-colors hover:text-coral"
+                   data-track="click_whatsapp"
+                   data-track-location="footer"
                  >
                    WhatsApp
                  </a>

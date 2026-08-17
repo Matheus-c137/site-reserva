@@ -26,6 +26,7 @@ export default function CtaBanner() {
             label="Falar no WhatsApp"
             size="large"
             className="mt-2 bg-white !text-coral shadow-lg hover:bg-white/90 hover:!text-coral-dark"
+            trackLocation="ctabanner"
           />
         </motion.div>
       </div>

@@ -71,6 +71,7 @@ export default function Services() {
                     message={service.waMessage}
                     label="Saiba mais"
                     variant="outline"
+                    trackLocation="services"
                   />
                 </div>
               </motion.div>

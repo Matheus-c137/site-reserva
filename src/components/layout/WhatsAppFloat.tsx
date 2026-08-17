@@ -38,6 +38,8 @@ export default function WhatsAppFloat() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-whatsapp mt-3 w-full py-2.5 text-sm"
+              data-track="click_whatsapp"
+              data-track-location="float"
             >
               <svg
                 className="h-4 w-4 fill-current shrink-0"

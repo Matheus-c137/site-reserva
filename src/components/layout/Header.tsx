@@ -65,6 +65,8 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary py-2.5 px-5 text-sm"
+              data-track="click_whatsapp"
+              data-track-location="header"
             >
               <svg
                 className="h-4 w-4 fill-current shrink-0"
@@ -118,6 +120,8 @@ export default function Header() {
                   rel="noopener noreferrer"
                   className="btn-primary w-full text-center"
                   onClick={() => setIsMobileMenuOpen(false)}
+                  data-track="click_whatsapp"
+                  data-track-location="header"
                 >
                   <svg
                     className="h-4 w-4 fill-current shrink-0"

@@ -6,6 +6,8 @@ interface WhatsAppButtonProps {
   variant?: 'primary' | 'whatsapp' | 'outline';
   size?: 'default' | 'large';
   className?: string;
+  trackLocation?: string;
+  trackPlan?: string;
 }
 
 export default function WhatsAppButton({
@@ -14,6 +16,8 @@ export default function WhatsAppButton({
   variant = 'whatsapp',
   size = 'default',
   className = '',
+  trackLocation,
+  trackPlan,
 }: WhatsAppButtonProps) {
   const baseClasses =
     variant === 'whatsapp'
@@ -32,6 +36,9 @@ export default function WhatsAppButton({
       rel="noopener noreferrer"
       className={`${baseClasses} ${sizeClasses} ${className}`}
       aria-label={`${label} via WhatsApp`}
+      data-track="click_whatsapp"
+      data-track-location={trackLocation}
+      data-track-plan={trackPlan}
     >
       <svg
         className="h-4.5 w-4.5 fill-current shrink-0"

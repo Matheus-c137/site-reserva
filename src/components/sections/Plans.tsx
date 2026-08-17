@@ -189,6 +189,8 @@ export default function Plans() {
                   label={plan.ctaLabel}
                   variant={plan.isPopular ? 'primary' : 'outline'}
                   className="w-full"
+                  trackLocation="plans"
+                  trackPlan={plan.id}
                 />
               </div>
             </motion.div>

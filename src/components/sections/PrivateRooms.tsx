@@ -68,6 +68,7 @@ export default function PrivateRooms() {
                 message={WA_MESSAGES.salas}
                 label="Solicitar orçamento"
                 size="large"
+                trackLocation="salas"
               />
             </motion.div>
           </div>

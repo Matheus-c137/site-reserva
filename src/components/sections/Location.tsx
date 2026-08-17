@@ -51,6 +51,7 @@ export default function Location() {
                 <a
                   href={`tel:${CONTACT.phoneRaw}`}
                   className="mt-1 inline-block text-sm text-muted transition-colors hover:text-coral"
+                  data-track="click_phone"
                 >
                   {CONTACT.phone}
                 </a>
@@ -78,6 +79,7 @@ export default function Location() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary mt-2 w-fit"
+              data-track="click_location"
             >
               <Navigation className="h-4.5 w-4.5" />
               Como chegar
